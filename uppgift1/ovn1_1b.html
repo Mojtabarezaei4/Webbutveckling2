@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="simple.js">
+
+        function start(){
+            /* Här under skapade jag figurer och definerade storleken, positionen och färgen på figurerna.
+            * Så sätt ritade jag en gubbe.
+            */
+            var body = rectangle(700, 300, 100, 200, "Blue");
+            var head = circle(750, 200, 100, "Yellow");
+
+            var leftEye = circle(700, 200, 10, "Black");
+            var rightEye = circle(800, 200, 10, "Black");
+
+            var leftEyeBow = line(680, 180, 720, 180, 2, "Black");
+            var rightEyeBow = line(780, 180, 820, 180, 2, "Black");
+
+            var nose = line(750, 200, 750, 240, 2, "Black");
+
+            var leftMounth = line(710, 240, 750, 280, 2, "Black");
+            var rightMounth= line(785, 240, 750, 280, 2, "Black");
+
+            var leg1 = line(734, 500, 734, 600, 5, "Black");
+            var leg1b = line(734, 598, 700, 598, 5, "Black");
+            var leg2 = line(766, 500, 766, 600, 5, "Black");
+            var leg2b = line(766, 598, 800, 598, 5, "Black");
+
+            var arm1 = line(700, 300, 600, 400, 10, "Red");
+            var arm2 = line(800, 300, 900, 400, 10, "Red");
+        }
+
+    </script>
+    
+</body>
+</html>
