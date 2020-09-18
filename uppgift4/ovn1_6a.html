@@ -1,0 +1,49 @@
+<!-- https://github.com/datorklubben/Spelprogrammering-med-JavaScript-och-Canvas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="simple.js">
+        // En lista med antal färger.
+        
+            let colors = ["red", "blue", "green", "yellow"];
+        
+        // Här under slumpade jag 5000 linjer med hjälp av en for-loop inom 500px kvadrat med slumpade färger.
+
+        var x = 0;
+
+        while(x <= window.innerWidth){
+            line(0, window.innerHeight, x, 0, 1, "black");
+            x+=10;
+        }
+
+        var x2 = window.innerWidth;
+
+        while(x2 >= 0){
+            line(window.innerWidth, window.innerHeight, x2, 0, 1, "black");
+            x2-=10;
+        }
+           
+        var y = 0;
+
+        while(y <= window.innerWidth){
+            line(0, 0, y, window.innerHeight, 1, "black");
+            y+=10;
+        } 
+
+        var y2 = window.innerWidth;
+
+        while(y2 >= 0){
+            line(window.innerWidth, 0, y2, window.innerHeight, 1, "black");
+            y2-=10;
+        } 
+    
+
+      </script>
+</body>
+</html>
