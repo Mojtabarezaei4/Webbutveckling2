@@ -11,14 +11,15 @@
     <script src="simple.js">
         // En lista med antal färger.
         
-            let colors = ["red", "blue", "green", "yellow"];
+        // let colors = ["red", "blue", "green", "yellow"];
         
-        // Här under slumpade jag 5000 linjer med hjälp av en for-loop inom 500px kvadrat med slumpade färger.
-
-        (x – h)2 + (y – k)2 = r2
-
-        circle()
+        // Tog hjälp av Pablo för att lösa problemet.
         
+        var angle = 0;
+        while(angle < 2*3.14){
+            line(totalWidth/2, totalHeight/2, (totalWidth/2) + (cos(angle) * 200), (totalHeight/2) + (sin(angle) * 200), 1, "black");
+            angle += (2*3.14) / 72;
+        }
 
       </script>
 </body>
