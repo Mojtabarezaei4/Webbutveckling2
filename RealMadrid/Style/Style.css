@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-family: "Bebas Neue";
+}
+
+header {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header #emirates-logo,
+header #adidas-logo,
+header #dots {
+  width: 50px;
+  height: 30px;
+  margin: 0.1rem, 0.6rem;
+}
+
+header #dots {
+  font-size: 20px;
+  margin-left: 0.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.content img {
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+  margin-left: 10px;
+  height: 7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation img {
+  position: relative;
+  margin: 15px;
+  left: 137px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.navigation #menu {
+  position: relative;
+  bottom: -25%;
+}
+
+.navigation #menu a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 2rem;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.links div {
+  width: 200px;
+  height: 250px;
+  background-color: #d6d6d6;
+  position: relative;
+  margin-top: 100px;
+  -webkit-box-shadow: 0px 0px 0px 33px rgba(242, 242, 242, 0.8);
+          box-shadow: 0px 0px 0px 33px rgba(242, 242, 242, 0.8);
+}
+
+.links img {
+  position: relative;
+  margin-left: 20%;
+  top: 3rem;
+  height: 10rem;
+}
+
+footer {
+  margin-top: 5rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d6d6d6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h2 {
+  margin: auto;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chating...</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body{
+            background-color: rgb(241, 248, 255);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #message-container {
+            position: relative;
+            width: 90%;
+            max-width: 90%;
+            border-radius: 5px;
+            background-color: rgb(221, 221, 221);
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+
+        #messag-container div {
+            position: relative;
+            height: 80%;
+            background-color: rgb(247, 48, 48);
+            padding: 5px;
+            max-width: 80%;
+
+        }
+        #message-container div:nth-child(2n) {
+            background: rgb(241, 248, 255);
+        }
+        #send-container{
+            justify-content: center;
+            display: flexbox;
+            justify-content: center;
+            justify-items: center;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            left: 5%;
+            width: 100%
+        }
+        #message-input{
+            width: 80%;
+            height: 30px;
+            background-color: transparent;
+            border-color: rgb(218, 218, 218);
+            border:none;
+            border-bottom: 1px solid black;
+            outline:none;
+        }
+        #send-button{
+            background-color: transparent;
+            border-color: rgb(218, 218, 218);
+            width: 10%;
+            height: 35px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            outline:none;
+        }
+        #send-button:focus {
+            color:#5fa8d3;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-container"></div>
+    <form id="send-container" >
+        <input type="text" id="message-input" placeholder="Write some massege">
+        <button type="submit" id="send-button">Send</button>
+    </form>
+</body>
+</html>

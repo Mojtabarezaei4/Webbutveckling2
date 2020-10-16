@@ -1,0 +1,14 @@
+@mixin centering(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin sizing(){
+    width: 50%;
+    height: 76vh;
+}
+
+@mixin centeringText(){    
+    @include centering();
+    align-items: center;
+}

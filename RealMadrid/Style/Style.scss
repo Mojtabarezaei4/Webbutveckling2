@@ -1,0 +1,85 @@
+@import "./functions";
+@import "./variabels";
+
+* {
+    margin: 0;
+    font-family: $Font;
+}
+header {
+    background-color: $headerColor;
+    @include centering($display);
+    justify-content: flex-end;
+    #emirates-logo,
+    #adidas-logo,
+    #dots {
+        width: 50px;
+        height: 30px;
+        margin: 0.1rem, 0.6rem;
+    }
+    #dots {
+        font-size: 20px;
+        margin-left: 0.3rem;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.content img{
+    width: 100%;
+}
+
+.navigation {
+    @include centering($display);
+    justify-content: space-between;
+    margin: 5px;
+    margin-left: 10px;
+    height: 7rem;
+    align-items: center;
+    img {
+        @include relativePosition;
+        margin: 15px;
+        left: 137px;
+        width: 4rem;
+        height: 4rem;
+    }
+    #menu {
+        @include relativePosition;
+        bottom: -25%;
+    }
+    #menu a {
+        text-decoration: none;
+        color: gray;
+        margin-right: 2rem;
+    }
+}
+.links {
+    @include centering($display);
+    justify-content: space-around;
+    div {
+        width: 200px;
+        height: 250px;
+        background-color: rgb(214, 214, 214);
+        @include relativePosition;
+        margin-top: 100px;
+        box-shadow: 0px 0px 0px 33px rgba(242,242,242,0.8);
+    }
+}
+.links img {
+    @include relativePosition;
+    margin-left: 20% ;
+    top: 3rem;
+    height: 10rem;
+}
+
+footer{
+    margin-top: 5rem;
+    height: 20rem;
+    @include centering($display);
+    background-color:  $FooterColor;
+    justify-content: center;
+    h2{
+        margin: auto;
+        color:  black;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,10 @@
+@import "./variabels";
+
+@mixin centering ($display) {
+    display: $display;
+}
+
+@mixin relativePosition (){
+    position: relative;
+}
+
