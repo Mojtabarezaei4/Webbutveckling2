@@ -1,7 +1,8 @@
-$BGColor: #ffffff; 
-$headerColor: #000000;
-$FooterColor: rgb(214, 214, 214);
-$Font: "Bebas Neue";
-$center: center;
-$display: flex;
-$relativePosition: relative;
+$BGColor: #ffffff;                                          //Background color
+$headerColor: #000000;                                      //A color for header
+$FooterColor: rgb(214, 214, 214);                           //A color for footer
+$Font: "Bebas Neue";                                          //The font for the whole website
+$center: center;                                              //A center veriable
+$displayFlex: flex;                                           //A veriable for the display- in this case it's flex
+$relativePosition: relative;                                  //A veriable for the position- in this case it's relative
+$tweentyPX: 20px;                                             //A veriable for size- in this case 20px

@@ -1,9 +1,11 @@
 @import "./variabels";
 
+//A function for center the content
 @mixin centering ($display) {
     display: $display;
 }
 
+//A function for make the position relative
 @mixin relativePosition (){
     position: relative;
 }
