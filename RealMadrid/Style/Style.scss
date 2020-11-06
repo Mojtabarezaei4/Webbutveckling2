@@ -10,6 +10,7 @@ header {
     background-color: $headerColor;
     @include centering($display);
     justify-content: flex-end;
+
     #emirates-logo,
     #adidas-logo,
     #dots {
@@ -17,6 +18,7 @@ header {
         height: 30px;
         margin: 0.1rem, 0.6rem;
     }
+
     #dots {
         font-size: $tweentyPX;
         margin-left: 0.3rem;
@@ -117,6 +119,7 @@ h4 {
     margin-left: 10px;
     height: 7rem;
     align-items: $center;
+
     img {
         @include relativePosition;
         margin: 15px;
@@ -124,10 +127,12 @@ h4 {
         width: 4rem;
         height: 4rem;
     }
+
     #menu {
         @include relativePosition;
         bottom: -25%;
     }
+
     #menu a {
         text-decoration: none;
         color: gray;
@@ -138,6 +143,7 @@ h4 {
 .links {
     @include centering($display);
     justify-content: space-around;
+
     div {
         width: 200px;
         height: 250px;
@@ -161,6 +167,7 @@ footer {
     @include centering($display);
     background-color: $FooterColor;
     justify-content: $center;
+
     h2 {
         margin: auto;
         color: black;

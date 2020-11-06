@@ -1,10 +1,10 @@
 var slides = document.querySelector('.sliderItems').children
+var totalSlides = slides.length
 
 var nextSlide = document.querySelector(".right-slide")
 var prevSlide = document.querySelector(".left-slide")
-var totalSlides = slides.length
-var index = 0
 
+var index = 0
 
 nextSlide.onclick = function () {
     next("next")
@@ -12,6 +12,7 @@ nextSlide.onclick = function () {
 prevSlide.onclick = function () {
     next("prev")
 }
+
 function next(direction) {
     if (direction == "next") {
         index++
