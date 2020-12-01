@@ -1,0 +1,13 @@
+.btn{
+    background-color : gray;
+    border-color: gray;
+}
+
+#theMainContainer{
+    margin-top: 10px;
+}
+
+#footerContent{
+    text-align: center;
+    margin: auto;
+}
