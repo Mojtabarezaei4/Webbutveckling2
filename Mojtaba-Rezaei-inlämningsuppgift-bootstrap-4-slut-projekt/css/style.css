@@ -1,25 +1,49 @@
-.btn{
-    background-color : gray;
-    border-color: gray;
+/** setting the color of the buttons to blue */
+.btn-bg-blue {
+	background: rgb(0, 108, 180);
+	border-color: rgb(0, 108, 180);
 }
 
-#theMainContainer{
-    text-align: center;
-    margin-top: 50px;
-    
+/** setting the color of the dropdown buttons to transparent */
+.btn-bg-transparent {
+	background: transparent;
+	border: transparent;
+	color: rgb(154, 157, 160);
 }
 
-.bottom-margin{
-    margin-bottom: 50px;
+/** setting the main container to center */
+#theMainContainer {
+	text-align: center;
+	margin-top: 50px;
 }
 
-.sticky-bottom {
-      position: fixed;
-      bottom: 0;
-      z-index: 1020;
-    }
+/** setting little space for the main container from bottom */
+.bottom-margin {
+	margin-bottom: 50px;
+}
 
-#footerContent{
-    text-align: center;
-    margin: auto;
+/** produkt dropdown gets little space from the right side */
+.dropdown-style {
+	margin-right: 50px;
+	transform: translateY(9%);
+}
+
+/** putting down little bit the tjänster dropdown to be in center */
+.dropdown-style-tjanster {
+	transform: translateY(9%);
+}
+
+/** setting the main footer content to center */
+#footerContent {
+	text-align: center;
+	margin: auto;
+}
+
+/** setting the main footer to the botton in the kontakt page when it's on the big screen */
+@media screen and (min-width: 992px) {
+	.sticky-bottom {
+		position: fixed;
+		bottom: 0;
+		z-index: 1020;
+	}
 }

@@ -3,13 +3,16 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- The boostrap scc-->
       <link rel="stylesheet" href="../css/bootstrap.css">
+      <!-- The boostrap script-->
       <script src="../js/bootstrap.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
       <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- My own css-->
       <link rel="stylesheet" href="../css/style.css">
       <title>Home</title>
    </head>
@@ -18,34 +21,47 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top">
          <a class="navbar-brand" href="#"><img src="../img/logo.png" width="90px" alt=""></a>
          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-         data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="navbar-collapse collapse" id="navbarCollapse">
-         <ul class="navbar-nav ml-auto">
-             <li class="nav-item active">
-                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="tjänster.html" tabindex="-1" aria-disabled="true">Tjänster</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
-             </li>
-             <li class="nav-item">
-                 <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
-                     aria-haspopup="true" aria-expanded="false">
-                         Produkter
+         </button>
+         <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Hem <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <div class="dropdown dropdown-style-tjanster">
+                     <button class="btn btn-secondary dropdown-toggle btn-style btn-bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                     Tjänster
                      </button>
                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                       <a class="dropdown-item" href="filmkamera.html">Film kamera</a>
+                        <a class="dropdown-item" href="tjänster.html">Tjänster</a>
+                        <a class="dropdown-item" href="#">Filmfotograf</a>
+                        <a class="dropdown-item" href="#">Fotograf</a>
+                        <a class="dropdown-item" href="#">Redigerare</a>
                      </div>
-                   </div>
-             </li>
-         </ul>
-     </div>
- </nav>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
+               </li>
+               <li class="nav-item">
+                  <div class="dropdown dropdown-style">
+                     <button class="btn btn-secondary dropdown-toggle btn-bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                     Produkter
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="filmkamera.html">Film kamera</a>
+                        <a class="dropdown-item" href="#">Analogkamera</a>
+                        <a class="dropdown-item" href="#">System kamera</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
       <!-- The slideshow-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
          <ol class="carousel-indicators">
@@ -62,7 +78,7 @@
                <div class="container">
                   <div class="carousel-caption">
                      <h1>Det är en analog kamera</h1>
-                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+                     <p><a class="btn btn-lg btn-primary btn-bg-blue" href="#" role="button">Läs mer</a></p>
                   </div>
                </div>
             </div>
@@ -74,7 +90,7 @@
                <div class="container">
                   <div class="carousel-caption">
                      <h1>Det är en Systemkamera</h1>
-                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+                     <p><a class="btn btn-lg btn-primary btn-bg-blue" href="#" role="button">Läs mer</a></p>
                   </div>
                </div>
             </div>
@@ -86,7 +102,7 @@
                <div class="container">
                   <div class="carousel-caption">
                      <h1>Det är en filmkamera</h1>
-                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+                     <p><a class="btn btn-lg btn-primary btn-bg-blue" href="#" role="button">Läs mer</a></p>
                   </div>
                </div>
             </div>
@@ -116,7 +132,7 @@
                   är mycket enkla, andra har ungefär samma inställningsmöjligheter som till exempel den enögda spegelreflexkameran. Kompaktkameror har genomsiktssökare, 
                   ibland mätsökare (hos analoga kameror). 
                </p>
-               <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Läs mer »</a></p>
             </div>
             <div class="col-lg-4">
                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/systemCameraLittle.jpg" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
@@ -131,7 +147,7 @@
                   mellanringar och fotoblixtar. De flesta systemkameror är spegelreflexkameror men det finns också mätsökarkameror med utbytbar optik, bland 
                   annat från tillverkaren Leica.
                </p>
-               <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Läs mer »</a></p>
             </div>
             <div class="col-lg-4">
                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/filmCameraLittle.jpg" alt="Film Camera" preserveAspectRatio="xMidYMid slice" 
@@ -146,7 +162,7 @@
                   samma följd ger en upplevelse av kontinuerlig rörelse. Genom att man har ett högt antal bilder per sekund kommer ögonen och hjärnan bortse 
                   från bildernas korta stillastående uppehåll och skapa en illusion av flöde.
                </p>
-               <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Läs mer »</a></p>
             </div>
          </div>
       </div>

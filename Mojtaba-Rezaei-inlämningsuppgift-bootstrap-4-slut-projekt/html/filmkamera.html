@@ -1,139 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-    <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Tjänster</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top">
-        <a class="navbar-brand" href="#"><img src="../img/logo.png" width="90px" alt=""></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tjänster.html" tabindex="-1" aria-disabled="true">Tjänster</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
-            </li>
-            <li class="nav-item active">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
-                    aria-haspopup="true" aria-expanded="false">
-                        Produkter
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="filmkamera.html">Film kamera</a>
-                    </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- The boostrap scc-->
+      <link rel="stylesheet" href="../css/bootstrap.css">
+      <!-- The boostrap script-->
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- My own css-->
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Film kameror</title>
+   </head>
+   <body>
+      <!-- The navigation-->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top">
+         <a class="navbar-brand" href="#"><img src="../img/logo.png" width="90px" alt=""></a>
+         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Hem <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <div class="dropdown dropdown-style-tjanster">
+                     <button class="btn btn-secondary dropdown-toggle btn-style btn-bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                     Tjänster
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="tjänster.html">Tjänster</a>
+                        <a class="dropdown-item" href="#">Filmfotograf</a>
+                        <a class="dropdown-item" href="#">Fotograf</a>
+                        <a class="dropdown-item" href="#">Redigerare</a>
+                     </div>
                   </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- The contact list-->
-<div class="container marketing bottom-margin" id="theMainContainer">
-    <div class="row">
-       <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaLF.png" alt="Analog Camera" preserveAspectRatio="xMidYMid slice" 
-             focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777">
-          </rect>
-          <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-          </img>
-          <h2>Arri alexa 65</h2>
-          <p>Bara för att hyra</p>
-          <p>15 000 kr/dag</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Hyra</a></p>
-       </div>
-       <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaMiniLF.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
-             focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777">
-          </rect>
-          <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-          </img>
-          <h2>Arri alexa mini LF</h2>
-          <p>700 000 kr</p>
-          <p>9 000 kr/dag</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Köp</a></p>
-       </div>
-       <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaMini.png" alt="Film Camera" preserveAspectRatio="xMidYMid slice" 
-             focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777">
-          </rect>
-          <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-          </img>
-          <h2>Arri alexa mini</h2>
-          <p>360 000 kr</p>
-          <p>5 000 kr/dag</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Köp</a></p>
-       </div>
-       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/Redranger.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
-           focusable="false" role="img" aria-label="Placeholder: 140x140">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777">
-        </rect>
-        <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-        </img>
-        <h2>RED MONSTRO 8K VV</h2>
-        <p>700 000 kr</p>
-        <p>8 000 kr/dag</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Köp</a></p>
-     </div>
-     <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/RedGemini.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
-           focusable="false" role="img" aria-label="Placeholder: 140x140">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777">
-        </rect>
-        <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-        </img>
-        <h2>RED GEMINI 5K S35</h2>
-        <p>200 000 kr</p>
-        <p>6 000 kr/dag</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Köp</a></p>
-     </div>
-     <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/RedDragon.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
-           focusable="false" role="img" aria-label="Placeholder: 140x140">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777">
-        </rect>
-        <text x="50%" y="50%" fill="#777" dy=".3em"></text>
-        </img>
-        <h2>RED DRAGON-X 6K S35</h2>
-        <p>150 000 kr</p>
-        <p>4 000 kr/dag</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Köp</a></p>
-     </div>
-    </div>
- </div>
-
-<!-- Footer -->
-<footer class="container-fluid py-5 bg-dark" id="footerContent" width="100%">
-    <a class="text-muted" href="#">&copy;	Perfect frame</a>
-    <br>
-    <a class="text-muted" href="#">Kronhusgatan 9</a>
-</footer>
-</body>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
+               </li>
+               <li class="nav-item active">
+                  <div class="dropdown dropdown-style">
+                     <button class="btn btn-secondary dropdown-toggle btn-bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                     Produkter
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="filmkamera.html">Film kamera</a>
+                        <a class="dropdown-item" href="#">Analogkamera</a>
+                        <a class="dropdown-item" href="#">System kamera</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- The produkt list-->
+      <div class="container marketing bottom-margin" id="theMainContainer">
+         <div class="row">
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaLF.png" alt="Analog Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>Arri alexa 65</h2>
+               <p>Bara för att hyra</p>
+               <p>15 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Hyra</a></p>
+            </div>
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaMiniLF.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>Arri alexa mini LF</h2>
+               <p>700 000 kr</p>
+               <p>9 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Köp</a></p>
+            </div>
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/ArriAlexaMini.png" alt="Film Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>Arri alexa mini</h2>
+               <p>360 000 kr</p>
+               <p>5 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Köp</a></p>
+            </div>
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/Redranger.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>RED MONSTRO 8K VV</h2>
+               <p>700 000 kr</p>
+               <p>8 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Köp</a></p>
+            </div>
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/RedGemini.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>RED GEMINI 5K S35</h2>
+               <p>200 000 kr</p>
+               <p>6 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Köp</a></p>
+            </div>
+            <div class="col-lg-4">
+               <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/RedDragon.png" alt="System Camera" preserveAspectRatio="xMidYMid slice" 
+                  focusable="false" role="img" aria-label="Placeholder: 140x140">
+               <title>Placeholder</title>
+               <rect width="100%" height="100%" fill="#777">
+               </rect>
+               <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+               </img>
+               <h2>RED DRAGON-X 6K S35</h2>
+               <p>150 000 kr</p>
+               <p>4 000 kr/dag</p>
+               <p><a class="btn btn-secondary btn-bg-blue" href="#" role="button">Köp</a></p>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="container-fluid py-5 bg-dark" id="footerContent" width="100%">
+         <a class="text-muted" href="#">&copy;	Perfect frame</a>
+         <br>
+         <a class="text-muted" href="#">Kronhusgatan 9</a>
+      </footer>
+   </body>
 </html>
