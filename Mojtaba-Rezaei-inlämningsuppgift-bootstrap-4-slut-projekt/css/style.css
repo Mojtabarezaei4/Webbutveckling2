@@ -9,6 +9,10 @@
     
 }
 
+.bottom-margin{
+    margin-bottom: 50px;
+}
+
 .sticky-bottom {
       position: fixed;
       bottom: 0;
