@@ -4,8 +4,16 @@
 }
 
 #theMainContainer{
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 50px;
+    
 }
+
+.sticky-bottom {
+      position: fixed;
+      bottom: 0;
+      z-index: 1020;
+    }
 
 #footerContent{
     text-align: center;
